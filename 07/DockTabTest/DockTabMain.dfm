@@ -1,0 +1,70 @@
+object FormDockTab: TFormDockTab
+  Left = 0
+  Top = 0
+  Width = 475
+  Height = 328
+  Caption = 'DockTabTest'
+  Color = clBtnFace
+  UseDockManager = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DockTabSet1: TDockTabSet
+    Left = 0
+    Top = 269
+    Width = 467
+    Height = 25
+    Align = alBottom
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ShrinkToFit = True
+    SoftTop = True
+    Style = tsModernPopout
+    DockSite = False
+    DestinationDockSite = Panel1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 41
+    Width = 467
+    Height = 228
+    Align = alClient
+    BevelOuter = bvNone
+    DockSite = True
+    TabOrder = 1
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 467
+    Height = 41
+    Align = alTop
+    TabOrder = 2
+    object btnOtherMemo: TButton
+      Left = 8
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'OtherMemo'
+      TabOrder = 0
+      OnClick = btnOtherMemoClick
+    end
+    object btnOtherForm: TButton
+      Left = 88
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'OtherForm'
+      TabOrder = 1
+      OnClick = btnOtherFormClick
+    end
+  end
+end

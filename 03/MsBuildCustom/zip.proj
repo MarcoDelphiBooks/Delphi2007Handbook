@@ -1,0 +1,24 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+<ItemGroup>
+<DefaultExclude Include="**\*.zip" />
+<DefaultExclude Include="**\*.txt" />
+<DefaultExclude Include="**\*.dpr" />
+<DefaultExclude Include="**\*.dproj" />
+<DefaultExclude Include="**\*.dproj.local" />
+<DefaultExclude Include="**\*.identcache" />
+<DefaultExclude Include="**\*.res" />
+<DefaultExclude Include="**\*.dcu" />
+<DefaultExclude Include="**\*.pas" />
+<DefaultExclude Include="**\*.dfm" />
+</ItemGroup>
+
+<ItemGroup>
+<ZipFiles Include="**\*.*" Exclude="@(DefaultExclude)" />
+</ItemGroup>
+
+<Target Name="Zip">
+<Zip Files="@(ZipFiles)" ZipFileName="marco.zip" />
+</Target>
+</Project>

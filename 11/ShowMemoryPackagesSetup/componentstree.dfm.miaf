@@ -1,0 +1,2 @@
+IF (TargetDir.Text <> )  THEN  Next.Enabled := True;
+IF (TargetDir.Text = )  THEN  Next.Enabled := false;

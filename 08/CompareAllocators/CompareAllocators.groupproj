@@ -1,0 +1,40 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{bd8704bf-e6c7-4400-9470-562b74424bfb}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FastMMAllocator">
+    <MSBuild Projects="FastMMAllocator.dproj" Targets="" />
+  </Target>
+  <Target Name="FastMMAllocator:Clean">
+    <MSBuild Projects="FastMMAllocator.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="FastMMAllocator:Make">
+    <MSBuild Projects="FastMMAllocator.dproj" Targets="Make" />
+  </Target>
+  <Target Name="WinAllocator">
+    <MSBuild Projects="WinAllocator.dproj" Targets="" />
+  </Target>
+  <Target Name="WinAllocator:Clean">
+    <MSBuild Projects="WinAllocator.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="WinAllocator:Make">
+    <MSBuild Projects="WinAllocator.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FastMMAllocator;WinAllocator" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="FastMMAllocator:Clean;WinAllocator:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="FastMMAllocator:Make;WinAllocator:Make" />
+  </Target>
+</Project>

@@ -1,0 +1,52 @@
+Example			Ch.	Page
+
+AnimateFix		9	188
+AutoPanels		7	122p.
+AutoRtti		5	107
+BtnGroups		7	124
+ClassHelperDemo		5	89
+ClassStatic		5	83, 86
+DbxDirect		10	212p., 216
+DbxMulti		10	197, 226
+DockTabTest		7	128
+FileAccess		9	182pp., 186
+FileAccessThemed	9	183
+FontsTest		9	164
+ForInContainer		6	112p.
+ForInWin32		5	93p.
+FormMouseActivate	7	128
+GetFont			9	164
+GetOSVersion		9	163
+HelpInsightDemo		1	35
+Indy9Sock1			246
+IndySock1			247
+InliningTest		5	97
+LeakTest		8	142
+ListBoxHelper		5	91
+ManualGlass		9	168
+MarginsPadding		7	121
+MiniPack		6	118
+MiniSize		6	117
+MsBuildCustom		3	70
+MyTrayIcon		7	131
+NestedTypes		5	87
+OpenDialog		9	177
+OperatorsOver		5	103
+PoolingDemo		10	209
+ProgressTask		9	174
+ProtectedPrivate	5	80
+RecordsDemo		5	101
+RegionsTest		1	25
+SafeCode		8	148, 150, 153
+SealedAndFinal		5	82
+ShowMemory		8	143, 222
+StaticCallBack		5	85
+UnitTestDemo		8	155
+VistaTest2007		9	169
+
+RecordWithStrings	5
+AssertDemo		8
+CompareAllocators	8
+FastMMCode		8
+dbx4Demo		10
+DbxReadOnly		10

@@ -1,0 +1,40 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{aebbf19c-7bb4-4506-9bc5-f99d95204a4b}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="UnitTestDemo">
+    <MSBuild Projects="UnitTestDemo.dproj" Targets="" />
+  </Target>
+  <Target Name="UnitTestDemo:Clean">
+    <MSBuild Projects="UnitTestDemo.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="UnitTestDemo:Make">
+    <MSBuild Projects="UnitTestDemo.dproj" Targets="Make" />
+  </Target>
+  <Target Name="UnitTestDemoTests">
+    <MSBuild Projects="UnitTestDemoTests.dproj" Targets="" />
+  </Target>
+  <Target Name="UnitTestDemoTests:Clean">
+    <MSBuild Projects="UnitTestDemoTests.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="UnitTestDemoTests:Make">
+    <MSBuild Projects="UnitTestDemoTests.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="UnitTestDemo;UnitTestDemoTests" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="UnitTestDemo:Clean;UnitTestDemoTests:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="UnitTestDemo:Make;UnitTestDemoTests:Make" />
+  </Target>
+</Project>

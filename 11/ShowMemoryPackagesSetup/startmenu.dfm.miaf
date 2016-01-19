@@ -1,0 +1,4 @@
+IF (NT.Caption = TRUE)  THEN  AllUsers.Enabled := True;
+IF (NT.Caption <> TRUE)  THEN  AllUsers.Enabled := false;
+IF (StartMenu.Text <> )  THEN  Next.Enabled := True;
+IF (StartMenu.Text = )  THEN  Next.Enabled := false;
